@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
-import Sidebar from "@/components/Sidebar";
+
+import "@/styles/global.css";
 
 export const metadata = {
   title: "Next.js",
@@ -13,12 +14,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>
+      <body className="min-h-dvh">
         <Header></Header>
-        <div className="flex">
-          <main> {children}</main>
-          <Sidebar></Sidebar>
-        </div>
+        {/* <div className="flex "> */}
+        <main className="p-4"> {children}</main>
+        {/* </div> */}
       </body>
     </html>
   );

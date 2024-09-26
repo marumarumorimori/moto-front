@@ -1,10 +1,16 @@
+import Link from "next/link";
+
 const Sidebar = () => {
   return (
-    <aside>
-      <ul>
-        <li>HOME</li>
-        <li>MAP</li>
-      </ul>
+    <aside className="h-fit block">
+      <div className="drop-shadow-sm border">
+        <ul>
+          <li>
+            <Link href="/">HOME</Link>
+          </li>
+          <li>MAP</li>
+        </ul>
+      </div>
     </aside>
   );
 };
